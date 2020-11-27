@@ -97,6 +97,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #profile-image {
+  border: 5px solid #74546a;
+
   border-radius: 10px;
   background: #74546a;
   box-shadow: -12px -12px 24px #5f4557, 12px 12px 24px #89637d;
