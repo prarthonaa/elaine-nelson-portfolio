@@ -208,7 +208,8 @@ box-shadow:  17px 17px 34px #dec9d4,
 .about-me-text{
   display: flex
   justify-content: center;
-  padding: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 #projects{
