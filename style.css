@@ -1,0 +1,302 @@
+:root {
+  --mainColor: #74546a;
+  --secondaryColor: #ffe7f4;
+
+  --headerText: #0b032d;
+  --secondaryText: #f67e7d;
+
+  --borderColor: #ffb997;
+
+  --shadowColor: #bfacb9;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+div {
+  font-family: "Spartan", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--secondaryText);
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--secondaryText);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 2em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryText);
+  outline: 1px solid var(--secondaryText);
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  height: 100vh;
+  overflow: auto;
+}
+
+.s2 {
+  background-color: var(--secondaryColor);
+  height: 100vh;
+  overflow: auto;
+}
+
+
+#logo-image {
+  display: block;
+  margin: 0 auto;
+
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  font-size: 36px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-item:hover{
+  border-radius: 18px;
+background: #74546a;
+box-shadow:  16px 16px 27px #6b4d62, 
+             -16px -16px 27px #7d5b72;
+
+}
+
+.nav-contact{
+  margin: 10px;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-wrapper right-wrapper";
+  margin: 50px;
+}
+
+.left-wrapper {
+  margin: 25px;
+}
+
+#preview-shadow {
+  background-color: var(--shadowColor);
+  width: 400px;
+  height: 500px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#preview {
+  width: 400px;
+  height: 500px;
+  border: 1.5px solid #7e2f57;
+  background-color: var(--previewBG);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid #7e2f57;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+#profile {
+  display: block;
+  margin: 0 auto;
+
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.right-wrapper {
+  background-color: var(--secondaryColor);
+  margin: 25px;
+
+  border-radius: 11px;
+background: #ffe7f4;
+box-shadow:  17px 17px 34px #dec9d4, 
+             -17px -17px 34px #ffffff;
+}
+
+.about-me-header{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.about-me-text{
+  display: flex
+  justify-content: center;
+  padding: 50px;
+}
+
+#projects{
+  height: auto;
+  overflow: auto;
+}
+
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.post{
+  display: flex;
+  justify-content: center;
+  padding: auto;
+  margin: auto;
+}
+
+
+.thumbnail {
+  width: 150px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.post-preview {
+  background-color: var(--secondaryColor);
+  padding: 15px;
+  width: 200px;
+  height: 100%;
+  
+}
+
+.post:hover{  
+  border-radius: 7px;
+  background: #74546a;
+  box-shadow:  30px 30px 60px #614759, 
+               -30px -30px 60px #87617b;
+}
+
+
+.post-title {
+  color: black;
+  margin: 0;
+  font-size: 23x;
+}
+
+.post-intro {
+  color: var(--headerText);
+  font-size: 12px;
+}
+
+
+.social-links {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+#elainespillsthechai{
+  height: 400px;
+  width: 760px;
+  object-fit: cover;
+  margin-top: 50px;
+
+  border-radius: 11px;
+  background: #ffe7f4;
+  box-shadow:  17px 17px 34px #dec9d4, 
+               -17px -17px 34px #ffffff;
+  
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+
+
+
+
