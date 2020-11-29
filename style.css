@@ -25,6 +25,7 @@ h6,
 strong {
   color: var(--mainText);
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 p,
@@ -97,7 +98,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #profile-image {
-  border: 5px solid #74546a;
+  
 
   border-radius: 10px;
   background: #74546a;
