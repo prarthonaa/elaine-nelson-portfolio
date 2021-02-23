@@ -17,11 +17,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
 
 </head>
 
@@ -31,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img id="logo-image" src="images/ELAINE NELSON.png">
+                    <img id="logo-image" src="logo-clear.png">
                 </div>
             </div>
         </div>
@@ -42,21 +49,24 @@
     <section>
 
 
-        <nav id="mainNavbar" class="navbar navbar-dark fixed-top navbar-expand-lg">
+        <nav id="mainNavbar" class="navbar navbar-light fixed-top navbar-expand-lg">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navLinks">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navLinks" class="d-flex justify-content-start">
+                <ul class="navbar-nav"> 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#logo">ABOUT</a>
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>                   
+                    <li class="nav-item active">
+                        <a class="nav-link" href="mailto:prarthonanelson@gmail.com" target="_blank">CONTACT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects-section">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="Elaine P Nelson Resume.pdf">RESUME</a>
+                        <a class="nav-link" target="_blank" href="#">RESUME</a>
                     </li>
 
                 </ul>
@@ -70,26 +80,26 @@
     <section style="margin: 20px;" id="about-section">
     <div class="container">
         <div class="row">
-            <div style="padding-bottom: 50px; margin-top: 30px;" class="col-lg-4 col-md-6">
-                <img id="profile-image" class="img-fluid" src="images/profile.jpg">
+            <div class="col-lg-4 col-md-6">
+                <!-- <img id="profile-image" class="img-fluid" src="images/profile.jpg"> -->
+                <img id="profile-image" style="padding: 30px;"class="img-fluid" src="about-image.jpg">
+
             </div>
-            <div style="margin-top: 30px;" class="col-lg-8 col-md-6">
-                <div class="about-me-header">
+            <div style="padding-bottom: 50px; margin-top: 30px;" class="col-lg-8 col-md-6">
+                <!-- <div class="about-me-header">
                     <h2>ABOUT ME</h2>
-                </div>
-                <div class="about-me-text">
-                    <p>I am an international student from Bangladesh studying Computer Science student at Memorial
+                </div> -->
+                <div id="about-me-text">
+                    <p>I am an international student from Bangladesh studying Computer Science at Memorial
                         University of
-                        Newfoundland. Web programming is something very new to me and this is the first ever website that I created
-                        from scratch!
-                        There is so much more room for improvement on this website, I appreciate any constructive
-                        criticism so feel free to <a style="color: white;" target="_blank" href="mailto:prarthonanelson@gmail.com">send me an
+                        Newfoundland. This is the first ever website that I have programmed
+                        and I appreciate any constructive
+                        criticism so feel free to <a  target="_blank" href="mailto:prarthonanelson@gmail.com">send me an
                             email</a> with your suggestions.</p>
                     <br>
                     <p>If I'm
-                        not busy doing school work or coding, you can find me buried behind a good book (V. E Schwab is
-                        my favourite
-                        author).I am also working on my very own Podcast "Elaine Spills The Chai" during the weekends, and it's first episode is available to stream.</p>
+                        not busy doing school work or coding, you can find me buried behind a good book. I had to put a hold on my podcast
+                         "Elaine Spills The Chai" for now since I'm super busy with school. Hopefully more episodes will be out in the summer! </p>
                 </div>
             </div>
         </div>
@@ -97,90 +107,132 @@
 
 
     <section id="projects-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div style="margin-bottom: 40px;" class="col d-flex justify-content-center""><h2>SOME PROJECTS I HAVE WORKED ON</h2></div>                
+                <div style="margin-bottom: 20px;" class="col d-flex justify-content-center"><h2>SOME PROJECTS I HAVE WORKED ON</h2></div>                
             </div>
-            <div class=" row d-flex justify-content-center">
-                    <div class="col-lg-4 col-md-6">
+            <div class="row d-flex justify-content-center">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project">
                             <h4>Blokus</h4>
-                            <br>
-                            <p>In my Software Engineering course: COMP 2005, my teammates and I attempted to create the
-                                well known game Blokus. I contributed to the majority of the planning which included
-                                designing sequence diagrams, use cases and other documentation.</p>
-                            <br>
+                            
+                            <p style="margin-bottom: 0;" >In my Software Engineering course: COMP 2005, my teammates and I attempted to create the
+                                well known game Blokus.</p>
+                                <br>
+                            <p><a href="blokusproject.html" target="_blank">Read More...</a></p>
+                                
+                            <img class="img-fluid" src="images/blokus.jpg">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="project">
+                            <h4>Stable Matching</h4>
+                            
+                            <p style="margin-bottom: 0;" >This was an optional project for my COMP 3600 course. I used the Gale Shapley algorithm to 
+                                solve the Stable Matching (also called Stable Marriage) problem.</p>
+                                <br>
+                            <p><a href="https://github.com/prarthonaa/Gale-Shapley-Implementation" target="_blank">Github link for this project</a></p>
+
+                            <img class="img-fluid" src="gs.png">
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <div class="project">
+                            <h4>Blokus</h4>
+                            
+                            <p style="margin-bottom: 0;" >In my Software Engineering course: COMP 2005, my teammates and I attempted to create the
+                                well known game Blokus.</p>
+                                <br>
                             <p><a href="blokusproject.html">Read More...</a></p>
 
                             <img class="img-fluid" src="images/blokus.jpg">
 
                         </div>
                     </div>
-<!--
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="project">
-                            <h4>Project Name</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni distinctio atque nam rem
-                                velit labore voluptatem dicta
-                                tempora expedita, qui hic voluptatum maiores deserunt ipsam nostrum error, laudantium
-                                iste eveniet!</p>
-                            <br>
-                            <p><a target="_blank" href="blokusproject.html">Read More...</a></p>
+                            <h4>Blokus</h4>
+                            
+                            <p style="margin-bottom: 0;" >In my Software Engineering course: COMP 2005, my teammates and I attempted to create the
+                                well known game Blokus.</p>
+                                <br>
+                            <p><a href="blokusproject.html">Read More...</a></p>
 
                             <img class="img-fluid" src="images/blokus.jpg">
 
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project">
-                            <h4>Project Name</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni distinctio atque nam rem
-                                velit labore voluptatem dicta
-                                tempora expedita, qui hic voluptatum maiores deserunt ipsam nostrum error, laudantium
-                                iste eveniet!</p>
-                            <br>
-                            <p><a target="_blank" href="#">Read More...</a></p>
-
-                            <img class="img-fluid" src="images/blokus.jpg">
-
-                        </div>
-                    </div>-->
                 </div>
             </div>
     </section>
 
-    <section id="contacts-section">
+    <section id="other-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
+            
+                <div class="row">
+                    <div style="margin-bottom: 20px;" class="col d-flex justify-content-center"><h2>SOME WORK OUTSIDE OF COMPUTER SCIENCE</h2></div>                
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="writing">
+                            <h4><a href="#" target="_blank">My thoughts on <i>Atomic Habits</i> by James Clear</a></h4>
+                            
+                            <p style="margin-bottom: 0;">I read <i>Atomic Habits</i> by James Clear in January and I have learnt so much. 
+                                This book has already changed the way I do certain things in my day to day life. Lessons from this book has also made me quite productive even on the days I take a break from school and work.</p>
+                            <br>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="writing">
+                           <a href="#" target="_blank"><h4>Main takeaways from Marty Lobdell's <i>Study Less, Study Smart</i></h4></a>
+                            <p style="margin-bottom: 0;" >I watched and summarized Marty Lobdell's <i>Study Less, Study Smart</i> lecture so you don't have to! Here's the <a target="_blank" href="https://www.youtube.com/watch?v=IlU-zDU6aQ0">Youtube video</a> if you still want to watch it!</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="writing">
+                            <h4 style="color: rgb(97, 162, 160);" >Elaine Spills the Chai</h4>
+                            
+                            <p style="margin-bottom: 0;" >My podcast currently only has one episode, but more will come in the Summer! Currently putting it together all by myself so it's difficult to work on this while school is going on.</p>
+                            <br>
+                            <p><a target="_blank"
+                                href="https://open.spotify.com/episode/6LZ2YKXTmbo7Nu6X8wDg4x?si=7n34XmHITJu4J7LFI7sIJQ">Stream on Spotify</a></p>
+                            <p><a target="_blank"
+                                href="https://podcasts.apple.com/ca/podcast/elaine-spills-the-chai/id1542519253">Stream on Apple Podcasts</a></p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-6 col-md-6">
                     <div class="social-links">
                         <h3  style="margin-bottom: 0;">CONNECT WITH ME</h3>
                         <br>                       
-                        <a style="color: white;" target="_blank" href="https://www.linkedin.com/in/elaine-prarthona-nelson/">LinkedIn</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/elaine-prarthona-nelson/">LinkedIn</a>
                         <br>
-                        <a style="color: white;" target="_blank" href="mailto:prarthonanelson@gmail.com">Send me an email</a>
+                        <a target="_blank" href="mailto:prarthonanelson@gmail.com">Send me an email</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="social-links">
                     <h3 style="margin-bottom: 0;">GIVE MY PODCAST A LISTEN</h3>
                     <br>
-                     <p>The first episode of the Elaine Spills The Chai
-                        Podcast is out now! It is available to stream on <a style="color: white;" target="_blank"
+                    <p>The first episode of the Elaine Spills The Chai
+                        Podcast is out now! It is available to stream on <a style="color: rgb(97, 162, 160);" target="_blank"
                             href="https://open.spotify.com/episode/6LZ2YKXTmbo7Nu6X8wDg4x?si=7n34XmHITJu4J7LFI7sIJQ">Spotify </a>and <a
-                            style="color: white;" target="_blank"
+                             target="_blank"
                             href="https://podcasts.apple.com/ca/podcast/elaine-spills-the-chai/id1542519253">Apple Podcasts</a>. You can also
-                        give me a follow on <a style="color: white;" target="_blank" href="https://www.instagram.com/elainespillsthechai/">
+                        give me a follow on <a  target="_blank" href="https://www.instagram.com/elainespillsthechai/">
                             Instagram</a>.</p>
                     <br>
                     <p>You can even stream it here!</p>
                     <iframe src="https://open.spotify.com/embed-podcast/episode/6LZ2YKXTmbo7Nu6X8wDg4x" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div> 
-                </div>
+                     -->
                 
-            </div>
+            
         </div>
 
     </section>
