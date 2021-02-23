@@ -1,0 +1,160 @@
+:root {
+  --mainColor: white;
+  --secondaryColor: #e9f1f1;
+
+  --headerText: #0b032d;
+  --secondaryText: #21363b;
+
+  --borderColor: #97ffe7;
+
+  --shadowColor: #c3d5d4;
+}
+
+body {
+  background: var(--mainColor);
+  font-family: "Spartan", sans-serif;
+  padding-top: 65px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--secondaryText);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondaryText);
+}
+
+div a {
+  color: rgb(97, 162, 160);
+}
+
+a:hover {
+  color: var(--headerText);
+}
+
+body::-webkit-scrollbar {
+  width: 2em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryText);
+  outline: 1px solid var(--secondaryText);
+}
+
+#logo-image {
+  display: block;
+  margin: 0 auto;
+  height: 80;
+  width: 200px;
+  object-fit: cover;
+}
+
+#logo {
+  justify-content: center;
+}
+
+#mainNavbar {
+  background-color: var(--mainColor);
+  font-size: 1.5rem;
+  font-weight: 100;
+  flex-direction: space around;
+}
+
+#mainNavbar .nav-link {
+  color: var(--shadowColor);
+}
+
+#mainNavbar .nav-link:hover {
+  color: var(--headerText);
+}
+
+#navLinks {
+  justify-content: center;
+}
+
+#projects-section {
+  background-color: var(--secondaryColor);
+}
+
+#profile-image {
+  border-radius: 10px;
+}
+
+#projects-section {
+  /* border: 6px outset var(--shadowColor); */
+  padding: 40px;
+}
+
+#projects-section h2{
+  color: rgb(65, 99, 98);">
+}
+
+.project {
+  padding: 15px;
+  flex-direction: row;
+  background-color: var(--mainColor);
+  border: 5px solid var(--shadowColor);
+}
+
+.project:hover {
+  background-color: rgb(208, 226, 220);
+  border: 5px solid var(--mainColor);
+}
+.project:hover a {
+  color: var(--secondaryText);
+}
+
+.project p {
+  font-size: 14px;
+  color: var(--headerText);
+}
+
+#other-section {
+  /* border: 6px outset var(--shadowColor); */
+  padding: 40px;
+}
+
+#other-section h2{
+  color: rgb(65, 99, 98);">
+}
+
+.writing {
+  padding: 15px;
+  flex-direction: row;
+  background-color: var(--secondaryColor);
+}
+
+.writing p {
+  font-size: 14px;
+  color: var(--headerText);
+}
+
+#elainespillsthechai {
+  margin: 20px;
+}
+.social-links {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
