@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rps_files/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="game">
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player Score</h2>
+                <p>0</p>
+            </div>
+            <div class="compScore">
+                <h2>Computer Score</h2>
+                <p>0</p>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <button>Let's Play</button>
+        </div>
+        <div class="match fadeOut">
+            <h2 class="winner">
+                Choose an option
+            </h2>
+            <div class="hands">
+                <img class="playerHand" src="rps_files/paper.png" alt="">
+                <img class="compHand" src="rps_files/paper.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">
+                    rock
+                </button>
+                <button class="paper">
+                    paper
+                </button>
+                <button class="scissors">
+                    scissors
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="rps_files/app.js"></script>
+</body>
+</html>
