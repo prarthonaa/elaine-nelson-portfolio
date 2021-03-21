@@ -1,0 +1,125 @@
+body {
+  background-color: #5a477b;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  color: rgb(197, 210, 223);
+  font-family: "Josefin Slab", serif;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+
+.intro {
+  height: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro h1 {
+  margin-top: 20px;
+  font-size: 80px;
+}
+
+.intro button {
+  width: 150px;
+  height: 100px;
+  background: none;
+  border: none;
+  color: #243d3d;
+  font-size: 20px;
+  background-color: #f8bb97;
+  border: 5px solid;
+  border-color: #e7723b;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.card-choices {
+  transition: opacity 0.8s ease;
+}
+.card-choices h2 {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.options button {
+  width: 100px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #243d3d;
+  font-size: 20px;
+  background-color: #f8bb97;
+  border: 5px solid;
+  border-color: #e7723b;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.score {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.score h2 {
+  font-size: 50px;
+}
+
+.match {
+  font-size: 30px;
+}
+
+#result {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 50px;
+  color: #f8bb97;
+}
+
+.grid {
+  height: 415px;
+  width: 440px;
+  margin-bottom: 100px;
+  transition: opacity 0.5s ease;
+}
+.congrats,
+.options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+.congrats p {
+  font-size: 20px;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}

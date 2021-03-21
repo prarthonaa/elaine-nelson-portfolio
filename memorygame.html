@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./memorygame-files/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Memory Game</title>
+</head>
+<body>
+    <section class="game">
+        <div class="score">
+            <div class="playerScore fadeOut">
+                <h2>Player Score</h2>
+                <span id="result">0</span>
+                <div><p  class="match d-flex justify-content-center">No matches yet                
+            </p></div>
+            </div> 
+                       
+        </div>
+        
+        <div class="intro">
+            <h1><strong>Memory Game</strong></h1>
+            <button><strong>Let's Play</strong></button>
+            <p>Created by Elaine P Nelson</p>
+                       
+        </div>
+        <div class="card-choices fadeOut container-fluid d-flex justify-content-center">
+            <div class="row d-flex justify-content-center">
+                <h2>
+                    Choose how many cards you want to play with
+                </h2>
+            </div>
+            <div class="row">
+            <div class="options">
+            <button class="eight">
+                eight
+            </button>
+            <button class="ten">
+                ten
+            </button>
+            <button class="twelve">
+                twelve
+            </button>
+            </div>
+            
+        </div>
+        </div>
+        
+        
+        <div class="game d-flex justify-content-center">
+            <div class="grid fadeOut"></div>
+            </div>
+        </div>
+        <div class="congrats d-flex justify-content-center fadeOut">
+            <div class="container">
+               <div class="row">
+                <h1>Congratulations! You found them all!</h1>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p>Refresh page to play again</p>
+            </div> 
+            </div>
+            
+            
+         </div>
+
+        
+    </section>
+
+    <script src="memorygame-files/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
