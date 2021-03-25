@@ -1,0 +1,44 @@
+:root {
+  --mainColor: white;
+  --secondaryColor: #f6fffe;
+
+  --headerText: #0b032d;
+  --secondaryText: #21363b;
+
+  --borderColor: #97ffe7;
+
+  --shadowColor: #c3d5d4;
+}
+
+i {
+  color: #7aa4ae;
+}
+
+h2 {
+  color: #4c666c;
+  margin-bottom: 20px;
+  font-size: 30pt;
+  font-weight: 900;
+}
+
+.rec-section {
+  padding: 15px;
+  flex-direction: row;
+
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.rec-card {
+  background: var(--secondaryColor);
+  margin: 10px;
+  padding-top: 10px;
+  color: var(--shadowColor);
+  border-radius: 5px;
+  background: #303131;
+}
+
+.rec-section p {
+  font-size: 14px;
+  color: var(--shadowColor);
+}
